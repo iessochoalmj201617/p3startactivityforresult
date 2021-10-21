@@ -6,4 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MetodoNuevoActivity">
 
+
+    <Button
+        android:id="@+id/btn_Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text=""
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_Nombre" />
+
+    <Button
+        android:id="@+id/btn_Apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/apellido"
+        app:layout_constraintStart_toStartOf="@+id/btn_Nombre"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Nombre" />
+
+    <TextView
+        android:id="@+id/tv_Apellido"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text=""
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_Apellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Apellido" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
